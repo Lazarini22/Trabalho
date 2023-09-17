@@ -32,12 +32,12 @@ h1 {
   font-family: "Roboto";
 }
 
-#espace{
-    margin-bottom: 20vh;
+#espace {
+  margin-bottom: 20vh;
 }
 
-#space{
-    margin-top: 20vh;
+#space {
+  margin-top: 20vh;
 }
 
 header {
@@ -62,7 +62,7 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   min-width: 300px;
   width: 40%;
-  margin: auto; 
+  margin: auto;
   padding: 35px;
   border-radius: 10px;
 }
@@ -96,16 +96,16 @@ button:hover {
 }
 
 .nome-card {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  .nome-card h1 {
-    font-size: 24px;
-    margin: 0;
-    color: #333;
-  }
+.nome-card h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
