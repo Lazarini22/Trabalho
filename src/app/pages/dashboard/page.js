@@ -3,15 +3,28 @@ import { getUsers } from "@/app/functions/handlerAcessAPI";
 import { Suspense } from "react";
 
 export default async function Dashboard() {
-    let nomes = getUsers();
-    return (
-        <div>
-            <Suspense fallback={<p>Carregando</p>}>
-                <Listagem users={nomes}/>
-                {nomes.map(serv => (
-                    <h1>{serv.nome}</h1>
-                ))}
-            </Suspense>
-        </div>
-    );
-};
+  let nomes = getUsers();
+  return (
+    <div className="page">
+      <header>
+        <h1>
+          IFMS<span class="servidores">.servidores</span>
+        </h1>
+      </header>
+      <Suspense
+        fallback={
+          <h1 className="section" id="space">
+            Carregando...!
+          </h1>
+        }
+      >
+        <Listagem users={nomes} />
+        {nomes.map((serv) => (
+          <div className="nome-card" key={serv.id}>
+            <h1>{serv.nome}</h1>
+          </div>
+        ))}
+      </Suspense>
+    </div>
+  );
+}
