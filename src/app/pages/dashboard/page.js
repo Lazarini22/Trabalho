@@ -8,7 +8,7 @@ export default async function Dashboard() {
     <div className="page">
       <header>
         <h1>
-          IFMS<span class="servidores">.servidores</span>
+          IFMS<span className="servidores">.servidores</span>
         </h1>
       </header>
       <Suspense

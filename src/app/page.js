@@ -32,7 +32,7 @@ export default function Login() {
     <div className="page">
       <header id="espace">
         <h1>
-          IFMS<span class="servidores">.servidores</span>
+          IFMS<span className="servidores">.servidores</span>
         </h1>
       </header>
       <div className="section">
