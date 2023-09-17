@@ -1,11 +1,12 @@
 import { getUsers } from "@/app/functions/handlerAcessAPI";
 
 export default async function Dashboard() {
-   
+    let nomes = getUsers();
     return (
         <div>
-            <h1>Dashboard</h1>
-            
+            {nomes.map(serv => (
+                <h1>{serv.nome}</h1>
+            ))}
         </div>
     );
 };
